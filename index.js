@@ -23,7 +23,7 @@ module.exports = function(constraints, fn) {
     fn(err);
   }
   if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia)
-    navigator.mediaDevices.getUsermedia(constraints).then(success, error)
+    navigator.mediaDevices.getUserMedia(constraints).then(success, error)
   else if (getUserMedia)
     getUserMedia.call(navigator, constraints, success, error);
   else
